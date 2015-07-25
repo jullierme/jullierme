@@ -11,6 +11,8 @@ Imagina que você tem um projeto html/javascript e precisa ficar fazendo downloa
 
 Com o bower, você pode adicionar uma nova dependência configurando um único arquivo (bower.json) ou simplesmente digitar um comando no prompt do windows.
 
+<!--more-->
+
 ## Vamos lá...
 
 Primeiro, certifique-se que em sua máquina esta instalado o [Nodejs](https://nodejs.org/download/).
