@@ -117,5 +117,5 @@ feed:
   path: atom.xml
   limit: 0
 
-google_analytics:
+google_analytics: UA-65639800-1
 rss: atom.xml
