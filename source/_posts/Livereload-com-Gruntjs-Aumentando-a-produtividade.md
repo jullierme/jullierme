@@ -1,8 +1,10 @@
-title: Livereload com Gruntjs - Aumentando a produtiviade
+title: Livereload com Gruntjs - Aumentando a produtividade
 date: 2015-08-04
 tags: ['gruntjs', 'livereload', 'angularjs']
 ---
-## Como funciona isso?
+![](/Livereload-com-Gruntjs-Aumentando-a-produtividade/banner.jpg)
+
+## Como isso funciona?
 
 A idéia é que a medida que você vai alterando seu código (js, html, css etc), essas alterações possam ser refletidas imediatamente no browser.
 
@@ -10,7 +12,7 @@ A idéia é que a medida que você vai alterando seu código (js, html, css etc)
 
 Você precisa do [Gruntjs](http://gruntjs.com/) configurado no seu projeto e de apenas um plugin. O [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch).
 
-### Instalação dos plugins
+### Instalação
 
 
 Pelo prompt de comando, navegue até a raiz do seu projeto, onde se encontra o arquivo <b>Gruntfile.js</b>
