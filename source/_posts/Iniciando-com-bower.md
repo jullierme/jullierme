@@ -1,5 +1,4 @@
-?title: Iniciando com bower
-date: 2015-07-24 18:35:30
+title: Iniciando com bower
 tags: bower
 ---
 {% asset_path slug %}
@@ -66,3 +65,4 @@ $ bower update
 Obrigado, até o próximo post.
 
 Jullierme Barros
+27/07/2015
