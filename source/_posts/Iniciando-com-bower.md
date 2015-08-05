@@ -1,7 +1,7 @@
 title: Iniciando com bower
+date: 2015-07-27
 tags: bower
 ---
-{% asset_path slug %}
 ## Por que utilizar o bower?
 
 Sabe como funciona o MAVEN para gerenciamento de dependências Java? Pois bem, o bower é uma ferramenta de gerenciamento de dependências de projetos client-side, similar ao maven. Ele pode ser adicionado em qualquer projeto, independente do back-end ser Java, Node, etc.
@@ -63,6 +63,3 @@ $ bower update
 É isso ai! Não deixe de perguntar se tiver alguma dúvida. 
 
 Obrigado, até o próximo post.
-
-Jullierme Barros
-27/07/2015
