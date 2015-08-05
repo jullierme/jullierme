@@ -77,28 +77,20 @@
     <div class="entry">
       
         <h2 id="Como_funciona_isso?">Como funciona isso?</h2><p>A idéia é que a medida que você vai alterando seu código (js, html, css etc), essas alterações possam ser refletidas imediatamente no browser.</p>
-<h3 id="De_que_preciso?">De que preciso?</h3><p>Você precisa do <a href="http://gruntjs.com/" target="_blank" rel="external">Gruntjs</a> configurado no seu projeto e de apenas um plugin. O <a href="https://github.com/gruntjs/grunt-contrib-watch" target="_blank" rel="external">grunt-contrib-watch</a>.</p>
+<h3 id="De_que_preciso?">De que preciso?</h3><p>Você precisa do <a href="http://gruntjs.com/">Gruntjs</a> configurado no seu projeto e de apenas um plugin. O <a href="https://github.com/gruntjs/grunt-contrib-watch">grunt-contrib-watch</a>.</p>
 <h3 id="Instalação_dos_plugins">Instalação dos plugins</h3><p>Pelo prompt de comando, navegue até a raiz do seu projeto, onde se encontra o arquivo <b>Gruntfile.js</b><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install grunt-contrib-watch --save-dev</span><br></pre></td></tr></table></figure></p>
 <p>Esse é o plugin vai fazer o livereload funcionar :)</p>
-<p>Aqui, eu utilizo outro plugin do grunt, indispensável por sinal. O <a href="https://www.npmjs.com/package/matchdep" target="_blank" rel="external">matchdep</a>. Ele simplesmente importa todos os plugins do grunt de uma vez. Para instalar, basta fazer:</p>
+<p>Aqui, eu utilizo outro plugin do grunt, indispensável por sinal. O <a href="https://www.npmjs.com/package/matchdep">matchdep</a>. Ele simplesmente importa todos os plugins do grunt de uma vez. Para instalar, basta fazer:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install matchdep --save-dev</span><br></pre></td></tr></table></figure>
-<p>Configurando nosso arquivo Gruntfile.js</p>
-<figure class="highlight javascript"><figcaption><span>[] Gruntfile.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">grunt</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//Carrega todos os plugins do Grunt declarados no arquivo package.json de uma vez</span></span><br><span class="line">    <span class="built_in">require</span>(<span class="string">'matchdep'</span>).filterDev(<span class="string">'grunt-*'</span>).forEach(grunt.loadNpmTasks);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Configurs Grunt</span></span><br><span class="line">    grunt.initConfig(&#123;</span><br><span class="line">        <span class="comment">// Tarefa watch</span></span><br><span class="line">        watch: &#123;</span><br><span class="line">            options: &#123;</span><br><span class="line">                livereload: <span class="literal">true</span></span><br><span class="line">            &#125;,</span><br><span class="line">            js: &#123;</span><br><span class="line">                files: [<span class="string">'**/*.js'</span>],</span><br><span class="line">            &#125;,</span><br><span class="line">            html: &#123;</span><br><span class="line">                files: [<span class="string">'**/*.html'</span>]</span><br><span class="line">            &#125;,</span><br><span class="line">            css: &#123;</span><br><span class="line">                files: [<span class="string">'**/*.css'</span>],</span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//registra uma tarefa</span></span><br><span class="line">    grunt.registerTask( <span class="string">"livereload"</span>, [ <span class="string">"watch"</span> ]);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>Agora, basta você adicionar esse código no index do seu projeto</p>
-<figure class="highlight html"><figcaption><span>[] index.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//localhost:35729/livereload.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="Resumindo">Resumindo</h2><p>Da linha 9 a 11, temos a ativação do livereload. Da linha 12 a 20, temos a configuração da escuta, ou seja, toda vez que um arquivo .js, .html ou .css for alterado, será feito o recarregamento da página no browser.</p>
-<h2 id="Vamos_aos_testes">Vamos aos testes</h2><p>Inicie o servidor de aplicação e depois digite o comando:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grunt livereload</span><br></pre></td></tr></table></figure>
-<p>Lembrando que <b>livereload</b> é o nome da tarefa que registramos na linha 25</p>
-<p>Abra sua aplicação pelo browser, altere algum arquivo e salve. Veja que a página foi recarregada com as novas alterações.</p>
-<h2 id="Dica">Dica</h2><p>Eu divido a tela em duas. Do lado esquerdo deixo o webstorm e do lado direito o browser com a aplicação carregada. Dessa forma, vou fazendo a codificação do meu sistema e verificando imediatamente o visual da página. É bem melhor que um “mode design” de alguma ferramenta rad por exemplo.</p>
-<h2 id="\o/">\o/</h2><p>É isso ai. Espero que te ajude como me ajudou :) Dúvidas? Deixe seu comentário.</p>
-<p>Obrigado</p>
-
+<p>Configurando nosso arquivo Gruntfile.js<br>
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/Livereload-com-Gruntjs-Aumentando-a-produtiviade/#more" class="more-link">Leia mais</a>
+          </div>
         
         
       

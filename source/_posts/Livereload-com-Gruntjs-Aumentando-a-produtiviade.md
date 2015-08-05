@@ -27,13 +27,13 @@ npm install matchdep --save-dev
 ```
 
 Configurando nosso arquivo Gruntfile.js
-
+<!--more-->
 {% codeblock [lang:javascript] Gruntfile.js%}
 module.exports = function(grunt) {
     //Carrega todos os plugins do Grunt declarados no arquivo package.json de uma vez
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-    // Configurs Grunt
+    // Configura o Grunt
     grunt.initConfig({
         // Tarefa watch
         watch: {
