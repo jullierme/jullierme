@@ -1,0 +1,37 @@
+menu:
+  Home: /
+  Posts: /archives
+  Github: https://github.com/jullierme
+  RSS: atom.xml
+
+widgets:
+- search
+- recent_posts
+- tag
+
+excerpt_link: Leia mais
+
+twitter:
+  username:
+  show_replies: false
+  tweet_count: 5
+
+addthis:
+  enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+fancybox: true
+
+google_analytics: UA-65639800-1
+rss: atom.xml
+
+comment_provider: disqus
+
+feed:
+  type: rss2
+  path: atom.xml
+  limit: 0
