@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Github: Compartilhe seu projeto | Jullierme Barros</title>
+  <meta name="author" content="Jullierme Barros">
+  
+  <meta name="description" content="Meu blog sobre angularjs, java e coisas que gosto:)">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Github: Compartilhe seu projeto"/>
+  <meta property="og:site_name" content="Jullierme Barros"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="atom.xml" title="Jullierme Barros" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-65639800-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Jullierme Barros</a></h1>
+  <h2><a href="/">Simples assim!</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Posts</a></li>
+    
+      <li><a href="https://github.com/jullierme">Github</a></li>
+    
+      <li><a href="atom.xml">RSS</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2015-08-14T03:00:00.000Z"><a href="/Github-Compartilhe-seu-projeto/">14/08/2015</a></time>
+      
+      
+  
+    <h1 class="title">Github: Compartilhe seu projeto</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p><img src="/Github-Compartilhe-seu-projeto/banner.png" alt=""><br>Neste mini-tutorial, vamos aprender a colocar nosso projeto no github. Também vamos aprender os principais comandos git.</p>
+<a id="more"></a>
+<h3 id="Pra_começar…">Pra começar…</h3><p>Antes de tudo, você precisa criar um repositório no github, na sua conta. É bem simples. Importante: NÃO CRIE O ARQUIVO README. Vamos criar este arquivo pela linha de comando.</p>
+<p>Pelo prompt, navegue até a raiz do seu projeto e digite:<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> init</span><br></pre></td></tr></table></figure></p>
+<p>Agora vamos criar o arquivo <b>.gitignore</b> s</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch .gitignore</span><br></pre></td></tr></table></figure>
+<p>O arquivo <b>.gitignore</b> serve para informarmos as pastas/arquivos do nosso projeto que não serão ‘comitados’.</p>
+<p>Por exemplo: se você tem o bower no seu projeto, não vai querer comitar a pasta <b>bower_components</b> nem a pasta <b>node_modules</b>. Para configurar essas pastas, abra o arquivo e informe:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node_modules/&#10;bower_components/</span><br></pre></td></tr></table></figure>
+<p>Agora sim vamos criar o arquivo <b>README.md</b>. Digite o comando:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch README.md</span><br></pre></td></tr></table></figure>
+<p>Agora, informe ao git quem é você. Ele precisa dessas informações para fazer o <b>commit</b></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"Seu Nome"</span></span><br><span class="line"></span><br><span class="line">git config --global user.email “seuemail@gmail.com”</span><br></pre></td></tr></table></figure>
+<p>Para verificar as pastas observadas pelo git, digite:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+<p>Os arquivos de verde estão ‘na fila’ para serem ‘comitados’. Os de vermelho foram alterados mas não foram ‘adicionados na fila’.</p>
+<p>Como estamos configurando o git agora, todos os arquivos precisam ser adicionados na fila para serem comitados. Para isso, digite:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<p>Agora vamos informar ao git da nossa máquina, qual é nosso repositório remoto.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/jullierme/angularjs.git</span><br></pre></td></tr></table></figure>
+<p>Ok, agora vamos fazer nosso primeiro commit.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m “comentário <span class="keyword">do</span> seu comit”</span><br></pre></td></tr></table></figure>
+<p>Lembrando que, o comando <b>commit</b> envia os arquivos para um no repositório local (INDEX) que está na nossa máquina. Estes ainda não foram para o servidor remoto. Podemos fazer diversos ‘commits’ antes de enviar tudo para o repositório remoto (HEAD)</p>
+<p>Para enviar todos os nossos commits para o servidor remoto, digite:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>E se eu quiser atualizar meu repositório local com as informações do repositório remoto?</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<p>Esse comando simplesmente ‘puxa’ todos os arquivos alterados (commits de outros desenvolvedores) para seu projeto.</p>
+<p>Durante o desenvolvimento, você basicamente irá utilizar os comandos:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add *</span><br></pre></td></tr></table></figure>
+<p>O <b>*</b> diz que o git deve adicionar todos os arquivos alterados ‘na fila’ para o próximo commit</p>
+<p>Continuando…</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
+<p>O comando <b>git status</b> sempre vai te mostrar se tem algo para adicionar na fila para ser ‘comitado’ e se não tiver, vai te mostrar quantos commits precisam ser enviados para o repositório remoto (head).</p>
+<p>e por ai vai…</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git commit -m “comentário <span class="keyword">do</span> seu comit”</span><br><span class="line">git push -u origin master</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<p>Um abraço, até a próxima</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/git/">git</a>, <a href="/tags/github/">github</a>
+  </div>
+
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+<section id="comment">
+  <h1 class="title">Comentários</h1>
+
+  
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Pesquisar">
+    <input type="hidden" name="q" value="site:jullierme.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">Recentes</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/Github-Compartilhe-seu-projeto/">Github: Compartilhe seu projeto</a>
+      </li>
+    
+      <li>
+        <a href="/Livereload-com-Gruntjs-Aumentando-a-produtividade/">Livereload com Gruntjs - Aumentando a produtividade</a>
+      </li>
+    
+      <li>
+        <a href="/Iniciando-com-bower/">Iniciando com bower</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/bower/">bower</a><small>1</small></li>
+  
+    <li><a href="/tags/git/">git</a><small>1</small></li>
+  
+    <li><a href="/tags/github/">github</a><small>1</small></li>
+  
+    <li><a href="/tags/gruntjs/">gruntjs</a><small>1</small></li>
+  
+    <li><a href="/tags/livereload/">livereload</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2015 Jullierme Barros
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<script type="text/javascript">
+var disqus_shortname = 'jullierme';
+
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

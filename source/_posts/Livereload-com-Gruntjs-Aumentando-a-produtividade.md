@@ -1,6 +1,6 @@
-title: Livereload com Gruntjs - Aumentando a produtividade
+﻿title: Livereload com Gruntjs - Aumentando a produtividade
 date: 2015-08-04
-tags: ['gruntjs', 'livereload', 'angularjs']
+tags: ['gruntjs', 'livereload']
 ---
 ![](/Livereload-com-Gruntjs-Aumentando-a-produtividade/banner.jpg)
 

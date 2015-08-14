@@ -1,4 +1,4 @@
-title: Iniciando com bower
+﻿title: Iniciando com bower
 date: 2015-07-27
 tags: bower
 ---
@@ -15,7 +15,7 @@ Com o bower, você pode adicionar uma nova dependência configurando um único a
 
 ## Vamos lá...
 
-Primeiro, certifique-se que em sua máquina esta instalado o [Nodejs](https://nodejs.org/download/).
+Primeiro, certifique-se que em sua máquina esta instalado o [Nodejs](https://nodejs.org/download/) e o [Git](https://git-scm.com/downloads).
 
 Falaremos sobre o nodejs outro post, por hora, apenas precisamos instalá-lo, pois o bower roda "em cima" do nodejs.
 
