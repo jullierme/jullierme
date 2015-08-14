@@ -79,6 +79,9 @@ deploy:
   type: git
   repo: https://github.com/jullierme/jullierme.github.io.git
   branch: [master]
+  connection:
+    user: julliermegyn@gmail.com
+    password: jj139111
 
 # Disqus
 disqus_shortname: jullierme

@@ -17,7 +17,7 @@ Você precisa do [Gruntjs](http://gruntjs.com/) configurado no seu projeto e de 
 
 Pelo prompt de comando, navegue até a raiz do seu projeto, onde se encontra o arquivo <b>Gruntfile.js</b>
 ``` bash
-npm install grunt-contrib-watch --save-dev
+$ npm install grunt-contrib-watch --save-dev
 ```
 
 Esse é o plugin vai fazer o livereload funcionar :)
@@ -25,7 +25,7 @@ Esse é o plugin vai fazer o livereload funcionar :)
 Aqui, eu utilizo outro plugin do grunt, indispensável por sinal. O [matchdep](https://www.npmjs.com/package/matchdep). Ele simplesmente importa todos os plugins do grunt de uma vez. Para instalar, basta fazer:
 
 ``` bash
-npm install matchdep --save-dev
+$ npm install matchdep --save-dev
 ```
 
 Configurando nosso arquivo Gruntfile.js
@@ -66,7 +66,7 @@ Agora, basta você adicionar esse código no index do seu projeto
 {% endcodeblock %}
 
 ## Resumindo
-
+hexo ge
 Da linha 9 a 11, temos a ativação do livereload. Da linha 12 a 20, temos a configuração da escuta, ou seja, toda vez que um arquivo .js, .html ou .css for alterado, será feito o recarregamento da página no browser.
 
 ## Vamos aos testes
@@ -74,7 +74,7 @@ Da linha 9 a 11, temos a ativação do livereload. Da linha 12 a 20, temos a con
 Inicie o servidor de aplicação e depois digite o comando:
 
 ``` bash
-grunt livereload
+$ grunt livereload
 ```
 
 Lembrando que <b>livereload</b> é o nome da tarefa que registramos na linha 25
