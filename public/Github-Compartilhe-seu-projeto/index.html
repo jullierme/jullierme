@@ -78,41 +78,67 @@
         <p><img src="/Github-Compartilhe-seu-projeto/banner.png" alt=""><br>Neste mini-tutorial, vamos aprender a colocar nosso projeto no github. Também vamos aprender os principais comandos git.</p>
 <a id="more"></a>
 <h3 id="Pra_começar…">Pra começar…</h3><p>Antes de tudo, você precisa criar um repositório no github, na sua conta. É bem simples. Importante: NÃO CRIE O ARQUIVO README. Vamos criar este arquivo pela linha de comando.</p>
-<p>Pelo prompt, navegue até a raiz do seu projeto e digite:<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git init</span><br></pre></td></tr></table></figure></p>
-<p>Agora vamos criar o arquivo <b>.gitignore</b> s</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch .gitignore</span><br></pre></td></tr></table></figure>
+<p>Pelo prompt, navegue até a raiz do seu projeto e digite para habilitar o git:<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> init</span><br></pre></td></tr></table></figure></p>
+<p>Agora vamos criar o arquivo <b>.gitignore</b> pela linha de comando: (Se preferir, crie manualmente)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch .gitignore</span><br></pre></td></tr></table></figure>
 <p>O arquivo <b>.gitignore</b> serve para informarmos as pastas/arquivos do nosso projeto que não serão ‘comitados’.</p>
 <p>Por exemplo: se você tem o bower no seu projeto, não vai querer comitar a pasta <b>bower_components</b> nem a pasta <b>node_modules</b>. Para configurar essas pastas, abra o arquivo e informe:</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node_modules/&#10;bower_components/</span><br></pre></td></tr></table></figure>
-<p>Agora sim vamos criar o arquivo <b>README.md</b>. Digite o comando:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch README.md</span><br></pre></td></tr></table></figure>
+<p>Agora sim vamos criar o arquivo <b>README.md</b> (Se preferir, crie manualmente). Digite o comando:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch README.md</span><br></pre></td></tr></table></figure>
 <p>Agora, informe ao git quem é você. Ele precisa dessas informações para fazer o <b>commit</b></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"Seu Nome"</span></span><br><span class="line">$ git config --global user.email “seuemail@gmail.com”</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"Seu Nome"</span></span><br><span class="line">git config --global user.email “seuemail@gmail.com”</span><br></pre></td></tr></table></figure>
 <p>Para verificar as pastas observadas pelo git, digite:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
 <p>Os arquivos de verde estão ‘na fila’ para serem ‘comitados’. Os de vermelho foram alterados mas não foram ‘adicionados na fila’.</p>
 <p>Como estamos configurando o git agora, todos os arquivos precisam ser adicionados na fila para serem comitados. Para isso, digite:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
 <p>Agora vamos informar ao git da nossa máquina, qual é nosso repositório remoto.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin https://github.com/jullierme/angularjs.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/usuario/nome-projeto.git</span><br></pre></td></tr></table></figure>
 <p>Ok, agora vamos fazer nosso primeiro commit.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m “comentário <span class="keyword">do</span> seu comit”</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m “comentário <span class="keyword">do</span> seu comit”</span><br></pre></td></tr></table></figure>
 <p>Lembrando que, o comando <b>commit</b> envia os arquivos para um no repositório local (INDEX) que está na nossa máquina. Estes ainda não foram para o servidor remoto. Podemos fazer diversos ‘commits’ antes de enviar tudo para o repositório remoto (HEAD)</p>
 <p>Para enviar todos os nossos commits para o servidor remoto, digite:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure>
-<p>E se eu quiser atualizar meu repositório local com as informações do repositório remoto?</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>Se houve alterações no projeto, seu push será rejeitado. É necessário atualizar o projeto local antes de enviar as novas modificações.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch origin</span><br></pre></td></tr></table></figure>
+<p>Atualizar o repositório local antes de enviar é uma boa prática a ser seguida para quem usa svn ou cvs e é obrigatória no git.</p>
+<p>Imagine o seguinte cenário. Você chega no trabalho e manhã e a primeira coisa que precisa fazer é baixar as atualizações do projeto feitas pela equipe.</p>
+<p>Para isso, basta fazer um <b>pull</b></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
 <p>Esse comando simplesmente ‘puxa’ todos os arquivos alterados (commits de outros desenvolvedores) para seu projeto.</p>
 <p>Durante o desenvolvimento, você basicamente irá utilizar os comandos:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add *</span><br></pre></td></tr></table></figure>
-<p>O <b>*</b> diz que o git deve adicionar todos os arquivos alterados ‘na fila’ para o próximo commit</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<p>O <b>.</b> diz que o git deve adicionar todos os arquivos alterados ‘na fila’ para o próximo commit</p>
 <p>Continuando…</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure>
 <p>O comando <b>git status</b> sempre vai te mostrar se tem algo para adicionar na fila para ser ‘comitado’ e se não tiver, vai te mostrar quantos commits precisam ser enviados para o repositório remoto (head).</p>
 <p>e por ai vai…</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m “comentário <span class="keyword">do</span> seu comit”</span><br><span class="line">$ git push -u origin master</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
-<p>Um abraço, até a próxima</p>
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git commit -m “comentário <span class="keyword">do</span> seu comit”</span><br><span class="line">git push -u origin master</span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
+<h2 id="Clonar_um_repositório_existente">Clonar um repositório existente</h2><p>Se o repositório já existe, você vai precisar baixar o projeto completamente antes de começar a trabalhar nele…</p>
+<p>Pra isso, será necessário fazer um <b>git clone</b>.</p>
+<p>Primeiro, navegue até a pasta raiz onde vai ficar seu projeto</p>
+<p>Ex: workspace</p>
+<p>Dentro da pasta, digite:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git://github.com/usuario/nome-projeto.git</span><br></pre></td></tr></table></figure>
+<p>Neste caso, será criada uma pasta chamada seuProjeto dentro de workspace com todos os arquivos do projeto.</p>
+<h2 id="Registrar_no_bower">Registrar no bower</h2><p>Registre seu projeto para que outras pessoas possam instalar</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bower register nome-projeto git://github.com/usuario/nome-projeto.git</span><br></pre></td></tr></table></figure>
+<p>Para verificar informações do registro, digite:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bower info nome-projeto</span><br></pre></td></tr></table></figure>
+<p>Agora qualquer pessoa pode instalar seu projeto pelo comando:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bower install nome-projeto</span><br></pre></td></tr></table></figure>
+<h2 id="Criar_uma_tag">Criar uma tag</h2><p>Mas qual versão será instalada quando alguém digitar o comando acima? Você precisa criar uma tag sempre que precisar gerar uma versão do seu projeto.</p>
+<h4 id="Ex:_1-0-0,_1-0-1_etc…">Ex: 1.0.0, 1.0.1 etc…</h4><p>Quando seu projeto for instalado pelo comando <b>bower install</b>, sempre virá a última versão do projeto.</p>
+<p>Para criar uma tag, digite:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag <span class="operator">-a</span> v1.<span class="number">0.0</span> -m <span class="string">"primeira versao"</span></span><br></pre></td></tr></table></figure>
+<p>Depois é só fazer um <b>push</b> da tag para que ela seja criada remotamente:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin v1.<span class="number">0.0</span></span><br></pre></td></tr></table></figure>
+<h3 id="Regra_para_criação_da_tag">Regra para criação da tag</h3><p>Um v minúsculo na frente e sempre três dígitos</p>
+<p>Ex: v1.0.8, v2.0.0</p>
+<h2 id="Remover_uma_tag">Remover uma tag</h2><p>Se você precisar remover uma tag, é bem simples:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git tag <span class="operator">-d</span> v1.<span class="number">1.2</span></span><br><span class="line">git push origin :refs/tags/v1.<span class="number">1.2</span></span><br></pre></td></tr></table></figure>
+<h2 id="Um_abraço,_até_a_próxima">Um abraço, até a próxima</h2>
       
     </div>
     <footer>

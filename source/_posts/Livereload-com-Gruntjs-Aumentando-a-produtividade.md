@@ -4,9 +4,14 @@ tags: ['gruntjs', 'livereload']
 ---
 ![](/Livereload-com-Gruntjs-Aumentando-a-produtividade/banner.jpg)
 
+
 ## Como isso funciona?
 
 A idéia é que a medida que você vai alterando seu código (js, html, css etc), essas alterações possam ser refletidas imediatamente no browser.
+
+Nesse artigo vamos aprender a configurar o livereload no nosso ambiente utilizando gruntjs e o plugin watch.
+
+<!--more-->
 
 ### De que preciso?
 
@@ -29,7 +34,7 @@ $ npm install matchdep --save-dev
 ```
 
 Configurando nosso arquivo Gruntfile.js
-<!--more-->
+
 {% codeblock [lang:javascript] Gruntfile.js%}
 module.exports = function(grunt) {
     //Carrega todos os plugins do Grunt declarados no arquivo package.json de uma vez
