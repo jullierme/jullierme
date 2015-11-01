@@ -50,7 +50,7 @@ angular.module('myApp',['angular-keycode']);
 Importar no seu html
 -------------
 ```html
-<script src="bower_components/angular-keycode/angular-keyboard.min.js"></script>
+<script src="bower_components/angular-keycode/angular-keycode.min.js"></script>
 ```
 
 Com usar?
