@@ -80,8 +80,8 @@ deploy:
   repo: https://github.com/jullierme/jullierme.github.io.git
   branch: [master]
   connection:
-    user: julliermegyn@gmail.com
-    password: jj139111
+    user: email
+    password: senha
 
 # Disqus
 disqus_shortname: jullierme
