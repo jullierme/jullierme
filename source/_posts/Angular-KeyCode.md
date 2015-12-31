@@ -2,11 +2,9 @@ title: Angular KeyCode
 date: 2015-10-31 12:16:28
 tags: Angularjs KeyboardEvent
 ---
-![](/Angular-KeyCode/banner.jpg)
-
 Números mágicos nunca mais. Utilize este serviço em AngularJS para verificar o código das teclas do teclado.
 
-<!--more-->
+
 [![](https://img.shields.io/bower/v/angular-keycode.svg)](http://bower.io/search/?q=angular-keycode)
 [![](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jullierme/angular-keycode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -25,6 +23,7 @@ Por exemplo:
 if(codigoCapturado === KeyCode.ENTER){
 ```
 
+<!--more-->
 Um arquivo bem pequeno. Menos que 2kb minificado :)
 
 Instalação

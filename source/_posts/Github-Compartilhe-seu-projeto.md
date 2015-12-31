@@ -2,10 +2,9 @@
 date: 2015-08-14
 tags: ['git', 'github']
 ---
-![](/Github-Compartilhe-seu-projeto/banner.png)
 Neste mini-tutorial, vamos aprender a colocar nosso projeto no github. Também vamos aprender os principais comandos git.
 
-<!--more-->
+
 ###Pra começar...
 
 Antes de tudo, você precisa criar um repositório no github, na sua conta. É bem simples. Importante: NÃO CRIE O ARQUIVO README. Vamos criar este arquivo pela linha de comando.
@@ -19,6 +18,8 @@ Agora vamos criar o arquivo <b>.gitignore</b> pela linha de comando: (Se preferi
 ```bash
 touch .gitignore
 ```
+
+<!--more-->
 
 O arquivo <b>.gitignore</b> serve para informarmos as pastas/arquivos do nosso projeto que não serão 'comitados'.
 

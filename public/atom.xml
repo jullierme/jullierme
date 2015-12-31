@@ -70,18 +70,21 @@
       <guid>jullierme.github.io/Angular-KeyCode/</guid>
       <pubDate>Sat, 31 Oct 2015 14:16:28 GMT</pubDate>
       <description>
-      <![CDATA[<p><img src="/Angular-KeyCode/banner.jpg" alt=""></p>
-<p>Números mágicos nunca mais. Utilize este serviço em AngularJS para verificar o código das teclas do teclado.</p>]]>
+      <![CDATA[<p>Números mágicos nunca mais. Utilize este serviço em AngularJS para verificar o código das teclas do teclado.</p>
+<p><a href="http://bower.io/search/?q=angular-keycode"><img src="https://img.shields.io/bower/v/angular-keycode.svg" alt=""></a><br><a href="https://gitter.im/jullierme/angular-keycode?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt=""></a></p>
+<h1 id="Números_mágicos_nunca_mais_\o/">Números mágicos nunca mais \o/</h1><p>O que é Angular Keycode? É um serviço de códigos de teclado.</p>
+<p>Quando você precisar capturar um evento de teclado e verificar qual tecla foi precionada, ao invés de colocar o código das teclas, utilize este serviço.</p>
+<p>Por exemplo:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(codigoCapturado === KeyCode.ENTER)&#123;</span><br></pre></td></tr></table></figure>]]>
       
       </description>
-      <content:encoded><![CDATA[<p><img src="/Angular-KeyCode/banner.jpg" alt=""></p>
-<p>Números mágicos nunca mais. Utilize este serviço em AngularJS para verificar o código das teclas do teclado.</p>
-<a id="more"></a>
+      <content:encoded><![CDATA[<p>Números mágicos nunca mais. Utilize este serviço em AngularJS para verificar o código das teclas do teclado.</p>
 <p><a href="http://bower.io/search/?q=angular-keycode" target="_blank" rel="external"><img src="https://img.shields.io/bower/v/angular-keycode.svg" alt=""></a><br><a href="https://gitter.im/jullierme/angular-keycode?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" target="_blank" rel="external"><img src="https://badges.gitter.im/Join%20Chat.svg" alt=""></a></p>
 <h1 id="Números_mágicos_nunca_mais_\o/">Números mágicos nunca mais \o/</h1><p>O que é Angular Keycode? É um serviço de códigos de teclado.</p>
 <p>Quando você precisar capturar um evento de teclado e verificar qual tecla foi precionada, ao invés de colocar o código das teclas, utilize este serviço.</p>
 <p>Por exemplo:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(codigoCapturado === KeyCode.ENTER)&#123;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>Um arquivo bem pequeno. Menos que 2kb minificado :)</p>
 <h2 id="Instalação">Instalação</h2><h3 id="bower">bower</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># Para instalar a &#250;ltima vers&#227;o&#10;bower install angular-keycode&#10;&#10;&#10;# Para instalar a &#250;ltima vers&#227;o e atualizar o arquivo bower.json&#10;bower install angular-keycode --save</span><br></pre></td></tr></table></figure>
 <h2 id="Registrar">Registrar</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">angular.module(<span class="string">'myApp'</span>,[<span class="string">'angular-keycode'</span>]);</span><br></pre></td></tr></table></figure>
@@ -101,15 +104,19 @@
       <guid>jullierme.github.io/Github-Compartilhe-seu-projeto/</guid>
       <pubDate>Fri, 14 Aug 2015 03:00:00 GMT</pubDate>
       <description>
-      <![CDATA[<p><img src="/Github-Compartilhe-seu-projeto/banner.png" alt=""><br>Neste mini-tutorial, vamos aprender a colocar nosso projeto no github. Também vamos aprender os principais comandos git.</p>]]>
+      <![CDATA[<p>Neste mini-tutorial, vamos aprender a colocar nosso projeto no github. Também vamos aprender os principais comandos git.</p>
+<h3 id="Pra_começar…">Pra começar…</h3><p>Antes de tudo, você precisa criar um repositório no github, na sua conta. É bem simples. Importante: NÃO CRIE O ARQUIVO README. Vamos criar este arquivo pela linha de comando.</p>
+<p>Pelo prompt, navegue até a raiz do seu projeto e digite para habilitar o git:<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> init</span><br></pre></td></tr></table></figure></p>
+<p>Agora vamos criar o arquivo <b>.gitignore</b> pela linha de comando: (Se preferir, crie manualmente)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch .gitignore</span><br></pre></td></tr></table></figure>]]>
       
       </description>
-      <content:encoded><![CDATA[<p><img src="/Github-Compartilhe-seu-projeto/banner.png" alt=""><br>Neste mini-tutorial, vamos aprender a colocar nosso projeto no github. Também vamos aprender os principais comandos git.</p>
-<a id="more"></a>
+      <content:encoded><![CDATA[<p>Neste mini-tutorial, vamos aprender a colocar nosso projeto no github. Também vamos aprender os principais comandos git.</p>
 <h3 id="Pra_começar…">Pra começar…</h3><p>Antes de tudo, você precisa criar um repositório no github, na sua conta. É bem simples. Importante: NÃO CRIE O ARQUIVO README. Vamos criar este arquivo pela linha de comando.</p>
 <p>Pelo prompt, navegue até a raiz do seu projeto e digite para habilitar o git:<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">git</span> init</span><br></pre></td></tr></table></figure></p>
 <p>Agora vamos criar o arquivo <b>.gitignore</b> pela linha de comando: (Se preferir, crie manualmente)</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch .gitignore</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>O arquivo <b>.gitignore</b> serve para informarmos as pastas/arquivos do nosso projeto que não serão ‘comitados’.</p>
 <p>Por exemplo: se você tem o bower no seu projeto, não vai querer comitar a pasta <b>bower_components</b> nem a pasta <b>node_modules</b>. Para configurar essas pastas, abra o arquivo e informe:</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node_modules/&#10;bower_components/</span><br></pre></td></tr></table></figure>
@@ -177,17 +184,17 @@
       <guid>jullierme.github.io/Livereload-com-Gruntjs-Aumentando-a-produtividade/</guid>
       <pubDate>Tue, 04 Aug 2015 03:00:00 GMT</pubDate>
       <description>
-      <![CDATA[<p><img src="/Livereload-com-Gruntjs-Aumentando-a-produtividade/banner.jpg" alt=""></p>
-<h2 id="Como_isso_funciona?">Como isso funciona?</h2><p>A idéia é que a medida que você vai alterando seu código (js, html, css etc), essas alterações possam ser refletidas imediatamente no browser.</p>
-<p>Nesse artigo vamos aprender a configurar o livereload no nosso ambiente utilizando gruntjs e o plugin watch.</p>]]>
+      <![CDATA[<h2 id="Como_isso_funciona?">Como isso funciona?</h2><p>A idéia é que a medida que você vai alterando seu código (js, html, css etc), essas alterações possam ser refletidas imediatamente no browser.</p>
+<p>Nesse artigo vamos aprender a configurar o livereload no nosso ambiente utilizando gruntjs e o plugin watch.</p>
+<h3 id="De_que_preciso?">De que preciso?</h3><p>Você precisa do <a href="http://gruntjs.com/">Gruntjs</a> configurado no seu projeto e de apenas um plugin. O <a href="https://github.com/gruntjs/grunt-contrib-watch">grunt-contrib-watch</a>.</p>
+<h3 id="Instalação">Instalação</h3><p>Pelo prompt de comando, navegue até a raiz do seu projeto, onde se encontra o arquivo <b>Gruntfile.js</b><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install grunt-contrib-watch --save-dev</span><br></pre></td></tr></table></figure></p>]]>
       
       </description>
-      <content:encoded><![CDATA[<p><img src="/Livereload-com-Gruntjs-Aumentando-a-produtividade/banner.jpg" alt=""></p>
-<h2 id="Como_isso_funciona?">Como isso funciona?</h2><p>A idéia é que a medida que você vai alterando seu código (js, html, css etc), essas alterações possam ser refletidas imediatamente no browser.</p>
+      <content:encoded><![CDATA[<h2 id="Como_isso_funciona?">Como isso funciona?</h2><p>A idéia é que a medida que você vai alterando seu código (js, html, css etc), essas alterações possam ser refletidas imediatamente no browser.</p>
 <p>Nesse artigo vamos aprender a configurar o livereload no nosso ambiente utilizando gruntjs e o plugin watch.</p>
-<a id="more"></a>
 <h3 id="De_que_preciso?">De que preciso?</h3><p>Você precisa do <a href="http://gruntjs.com/" target="_blank" rel="external">Gruntjs</a> configurado no seu projeto e de apenas um plugin. O <a href="https://github.com/gruntjs/grunt-contrib-watch" target="_blank" rel="external">grunt-contrib-watch</a>.</p>
 <h3 id="Instalação">Instalação</h3><p>Pelo prompt de comando, navegue até a raiz do seu projeto, onde se encontra o arquivo <b>Gruntfile.js</b><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install grunt-contrib-watch --save-dev</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <p>Esse é o plugin vai fazer o livereload funcionar :)</p>
 <p>Aqui, eu utilizo outro plugin do grunt, indispensável por sinal. O <a href="https://github.com/sindresorhus/load-grunt-tasks" target="_blank" rel="external">load-grunt-tasks</a>. Ele simplesmente importa todos os plugins do grunt de uma vez. Para instalar, basta fazer:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install load-grunt-tasks --save-dev</span><br></pre></td></tr></table></figure>
@@ -195,7 +202,7 @@
 <figure class="highlight javascript"><figcaption><span>[] Gruntfile.js</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = <span class="function"><span class="keyword">function</span>(<span class="params">grunt</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//Carrega todos os plugins do Grunt declarados no arquivo package.json de uma vez</span></span><br><span class="line">    <span class="built_in">require</span>(<span class="string">'load-grunt-tasks'</span>)(grunt);</span><br><span class="line"></span><br><span class="line">    grunt.initConfig(&#123;</span><br><span class="line">        watch: &#123;</span><br><span class="line">            options: &#123;</span><br><span class="line">                livereload: <span class="literal">true</span></span><br><span class="line">            &#125;,</span><br><span class="line">            arquivos: &#123;</span><br><span class="line">                files: [<span class="string">'**/*.js'</span>, <span class="string">'**/*.html'</span>,<span class="string">'**/*.css'</span>]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//registra uma tarefa</span></span><br><span class="line">    grunt.registerTask( <span class="string">"livereload"</span>, [ <span class="string">"watch"</span> ]);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>Agora, basta você adicionar esse código no index do seu projeto</p>
 <figure class="highlight html"><figcaption><span>[] index.html</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//localhost:35729/livereload.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="Resumindo">Resumindo</h2><p>hexo ge<br>Na linha 8 temos a ativação do livereload. Na linha 11, temos a configuração da escuta, ou seja, toda vez que um arquivo .js, .html ou .css for alterado, será feito o recarregamento da página no browser.</p>
+<h2 id="Resumindo">Resumindo</h2><p>Na linha 8 temos a ativação do livereload. Na linha 11, temos a configuração da escuta, ou seja, toda vez que um arquivo .js, .html ou .css for alterado, será feito o recarregamento da página no browser.</p>
 <h2 id="Vamos_aos_testes">Vamos aos testes</h2><p>Inicie o servidor de aplicação e depois digite o comando:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ grunt livereload</span><br></pre></td></tr></table></figure>
 <p>Lembrando que <b>livereload</b> é o nome da tarefa que registramos na linha 25</p>
@@ -213,21 +220,23 @@
       <guid>jullierme.github.io/Iniciando-com-bower/</guid>
       <pubDate>Mon, 27 Jul 2015 03:00:00 GMT</pubDate>
       <description>
-      <![CDATA[<p><img src="/Iniciando-com-bower/banner.jpg" alt=""></p>
-<h2 id="Por_que_utilizar_o_bower?">Por que utilizar o bower?</h2><p>Sabe como funciona o MAVEN para gerenciamento de dependências Java? Pois bem, o bower é uma ferramenta de gerenciamento de dependências de projetos client-side, similar ao maven. Ele pode ser adicionado em qualquer projeto, independente do back-end ser Java, Node, etc.</p>
-<p>Imagina que você tem um projeto html/javascript e precisa ficar fazendo download manual de todos os scripts/dependências que seu sistema utiliza. E o ciclo se repete a cada nova versão de uma dependência. Isso é trabalhoso e improdutivo.</p>
-<p>Com o bower, você pode adicionar uma nova dependência configurando um único arquivo (bower.json) ou simplesmente digitar um comando no prompt do windows.</p>]]>
-      
-      </description>
-      <content:encoded><![CDATA[<p><img src="/Iniciando-com-bower/banner.jpg" alt=""></p>
-<h2 id="Por_que_utilizar_o_bower?">Por que utilizar o bower?</h2><p>Sabe como funciona o MAVEN para gerenciamento de dependências Java? Pois bem, o bower é uma ferramenta de gerenciamento de dependências de projetos client-side, similar ao maven. Ele pode ser adicionado em qualquer projeto, independente do back-end ser Java, Node, etc.</p>
+      <![CDATA[<h2 id="Por_que_utilizar_o_bower?">Por que utilizar o bower?</h2><p>Sabe como funciona o MAVEN para gerenciamento de dependências Java? Pois bem, o bower é uma ferramenta de gerenciamento de dependências de projetos client-side, similar ao maven. Ele pode ser adicionado em qualquer projeto, independente do back-end ser Java, Node, etc.</p>
 <p>Imagina que você tem um projeto html/javascript e precisa ficar fazendo download manual de todos os scripts/dependências que seu sistema utiliza. E o ciclo se repete a cada nova versão de uma dependência. Isso é trabalhoso e improdutivo.</p>
 <p>Com o bower, você pode adicionar uma nova dependência configurando um único arquivo (bower.json) ou simplesmente digitar um comando no prompt do windows.</p>
-<a id="more"></a>
+<h2 id="Vamos_lá…">Vamos lá…</h2><p>Primeiro, certifique-se que em sua máquina esta instalado o <a href="https://nodejs.org/download/">Nodejs</a> e o <a href="https://git-scm.com/downloads">Git</a>.</p>
+<p>Falaremos sobre o nodejs outro post, por hora, apenas precisamos instalá-lo, pois o bower roda “em cima” do nodejs.</p>
+<h3 id="GO_GO_GO">GO GO GO</h3><p>Primeiramente, precisamos instalar o bower no nodejs, de forma que possa ser utilziado por qualquer projeto. Para isso abra o prompt de comando (modo administrador) e digite o seguinte comando:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g bower</span><br></pre></td></tr></table></figure>]]>
+      
+      </description>
+      <content:encoded><![CDATA[<h2 id="Por_que_utilizar_o_bower?">Por que utilizar o bower?</h2><p>Sabe como funciona o MAVEN para gerenciamento de dependências Java? Pois bem, o bower é uma ferramenta de gerenciamento de dependências de projetos client-side, similar ao maven. Ele pode ser adicionado em qualquer projeto, independente do back-end ser Java, Node, etc.</p>
+<p>Imagina que você tem um projeto html/javascript e precisa ficar fazendo download manual de todos os scripts/dependências que seu sistema utiliza. E o ciclo se repete a cada nova versão de uma dependência. Isso é trabalhoso e improdutivo.</p>
+<p>Com o bower, você pode adicionar uma nova dependência configurando um único arquivo (bower.json) ou simplesmente digitar um comando no prompt do windows.</p>
 <h2 id="Vamos_lá…">Vamos lá…</h2><p>Primeiro, certifique-se que em sua máquina esta instalado o <a href="https://nodejs.org/download/" target="_blank" rel="external">Nodejs</a> e o <a href="https://git-scm.com/downloads" target="_blank" rel="external">Git</a>.</p>
 <p>Falaremos sobre o nodejs outro post, por hora, apenas precisamos instalá-lo, pois o bower roda “em cima” do nodejs.</p>
 <h3 id="GO_GO_GO">GO GO GO</h3><p>Primeiramente, precisamos instalar o bower no nodejs, de forma que possa ser utilziado por qualquer projeto. Para isso abra o prompt de comando (modo administrador) e digite o seguinte comando:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g bower</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <h3 id="Configurando_o_projeto">Configurando o projeto</h3><p>Pelo prompt, navegue até o diretório raiz do seu projeto. Para habilitar o bower, digite:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ bower init</span><br></pre></td></tr></table></figure>
 <p>Algumas opções serão exibidas pra você configurar o arquivo principal do bower (bower.json). Porém, você pode fazer isso diretamente no arquivo mais tarde. Por hora, vá precionando enter até finalizar.</p>
