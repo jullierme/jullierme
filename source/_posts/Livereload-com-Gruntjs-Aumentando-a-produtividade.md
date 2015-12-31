@@ -27,10 +27,10 @@ $ npm install grunt-contrib-watch --save-dev
 
 Esse é o plugin vai fazer o livereload funcionar :)
 
-Aqui, eu utilizo outro plugin do grunt, indispensável por sinal. O [matchdep](https://www.npmjs.com/package/matchdep). Ele simplesmente importa todos os plugins do grunt de uma vez. Para instalar, basta fazer:
+Aqui, eu utilizo outro plugin do grunt, indispensável por sinal. O [load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks). Ele simplesmente importa todos os plugins do grunt de uma vez. Para instalar, basta fazer:
 
 ``` bash
-$ npm install matchdep --save-dev
+$ npm install load-grunt-tasks --save-dev
 ```
 
 Configurando nosso arquivo Gruntfile.js
@@ -38,25 +38,17 @@ Configurando nosso arquivo Gruntfile.js
 {% codeblock [lang:javascript] Gruntfile.js%}
 module.exports = function(grunt) {
     //Carrega todos os plugins do Grunt declarados no arquivo package.json de uma vez
-    require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+    require('load-grunt-tasks')(grunt);
 
-    // Configura o Grunt
     grunt.initConfig({
-        // Tarefa watch
         watch: {
             options: {
                 livereload: true
             },
-            js: {
-                files: ['**/*.js'],
-            },
-            html: {
-                files: ['**/*.html']
-            },
-            css: {
-                files: ['**/*.css'],
-            },
-        },
+            arquivos: {
+                files: ['**/*.js', '**/*.html','**/*.css']
+            }
+        }
     });
 
     //registra uma tarefa
@@ -72,7 +64,7 @@ Agora, basta você adicionar esse código no index do seu projeto
 
 ## Resumindo
 hexo ge
-Da linha 9 a 11, temos a ativação do livereload. Da linha 12 a 20, temos a configuração da escuta, ou seja, toda vez que um arquivo .js, .html ou .css for alterado, será feito o recarregamento da página no browser.
+Na linha 8 temos a ativação do livereload. Na linha 11, temos a configuração da escuta, ou seja, toda vez que um arquivo .js, .html ou .css for alterado, será feito o recarregamento da página no browser.
 
 ## Vamos aos testes
 
